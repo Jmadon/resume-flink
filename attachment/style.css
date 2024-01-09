@@ -1,0 +1,157 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: #333333;
+  background-color: #f5f7f1;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#leftBackground {
+  border: 1px solid #333333;
+  background-color: #333333;
+  width: 160px;
+  padding-left: 30px;
+}
+
+#rightBackground {
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  width: 489px;
+  padding: 40px 0px 60px 40px;
+}
+
+#profileImage {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 40px 40px 20px 10px;
+  background: #ffffff url("../attachment/profile-image.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.categoryLeftTextText {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.center-text {
+  position: relative;
+  text-align: center;
+  margin-left: -30px;
+}
+
+.whiteText {
+  color: #ffffff;
+}
+
+.indentsContacts {
+  padding-left: 20px;
+  margin: 0 0 20px 0;
+}
+
+.contactsBlock {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+.contactsText {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.roundDiv {
+  display: flex;
+  float: left;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.iconsImg {
+  height: 22px;
+  vertical-align: baseline;
+}
+
+.fontSize12 {
+  font-size: 12px;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.links:hover {
+  text-decoration: underline;
+}
+
+.marginContacts {
+  margin: 2px 0 5px 6px;
+}
+
+.indentsLanguage {
+  margin: 0 0 0 0;
+}
+
+.categoryRightText {
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.dateBlock {
+  float: right;
+  background-color: #333333;
+  border-radius: 11px 0 0 11px;
+  width: 151px;
+}
+
+.dateText {
+  font-size: 10px;
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  padding: 5px 0 5px 5px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.summaryWork {
+  text-align: justify;
+  margin: 15px 40px 5px 0;
+}
+
+.textjstf {
+  text-align: justify;
+  margin: 0 40px 20px 0;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #leftBackground {
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-left: 0 auto;
+    border: 1px solid #333333;
+  }
+
+  #rightBackground {
+    width: calc(100% - 40px);
+  }
+
+  .center-text {
+    text-align: left;
+    margin-left: 30px;
+  }
+}
